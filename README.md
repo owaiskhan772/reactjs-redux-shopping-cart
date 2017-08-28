@@ -3,7 +3,7 @@ A full fledged shopping cart developed using React.js (Redux), Node.js, Express.
 
 ### Getting Started
 
-An API has been written and axios is doing the API calls. API is running on proxy server having port of 3001 (http://localhost:3001/api/).
+An API has been written and axios is doing the API calls. API is running on proxy server having port of 3001 (e.g. http://localhost:3001/books/).
 
 ### Getting Started
 
