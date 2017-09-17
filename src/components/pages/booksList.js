@@ -2,7 +2,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import * as booksActions from '../../actions/booksActions';
-import { Grid, Col, Row, Button } from 'react-bootstrap';
+import { Carousel, Grid, Col, Row, Button } from 'react-bootstrap';
 import BookItem from './bookItem';
 import BooksForm from './booksForm';
 import Cart from './cart';
@@ -29,11 +29,29 @@ class BooksList extends React.Component{
     });
 
     return(
-      <Grid style={{ marginTop: '60px' }}>
+      <Grid>
         <Row>
+        <Carousel>
+          <Carousel.Item>
+            <img width={900} height={300} alt="900x300" src="/images/home1.jpg"/>
+            <Carousel.Caption>
+              <h3>React.js/Redux Shopping Cart</h3>
+              <p>A full fledged shopping cart developed using React.js (Redux), Node.js, Express.js, MongoDB (Mongoose) etc.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img width={900} height={300} alt="900x300" src="/images/home2.jpg"/>
+            <Carousel.Caption>
+              <h3>Motive</h3>
+              <p>Learn the advance features of React.js (Redux), Node.js (Express) and MongoDB etc. An API is used for the web app requests.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+        </Row>
+        <Row style={{ marginTop: '15px' }}>
           <Cart />
         </Row>
-        <Row>
+        <Row style={{ marginTop: '15px' }}>
           { booksList }
         </Row>
       </Grid>
