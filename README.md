@@ -1,4 +1,4 @@
-# Reactjs Redux Shopping Cart
+# Reactjs Redux Nodejs Shopping Cart
 A full fledged shopping cart developed using React.js (Redux), Node.js, Express.js, MongoDB (Mongoose).
 
 ### Getting Started
